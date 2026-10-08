@@ -1,0 +1,105 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav-principal {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.nav-principal a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-principal a:hover {
+    background-color: #bb86fc;
+    color: #121212;
+    transform: translateY(-3px);
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(187, 134, 252, 0.3);
+}
+
+.contenedor-principal {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.tarjeta-bienvenida {
+    background-color: #1e1e1e;
+    padding: 40px 50px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    border-top: 5px solid #bb86fc;
+    max-width: 600px;
+    width: 100%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-top 0.4s ease;
+}
+
+.tarjeta-bienvenida:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(187, 134, 252, 0.4); 
+    border-top: 5px solid #d4b3f9; 
+}
+
+
+.tarjeta-bienvenida h1 {
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.instruccion {
+    color: #bb86fc;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.tarjeta-bienvenida hr {
+    border: 0;
+    height: 1px;
+    background-color: #333;
+    margin: 25px 0;
+}
+
+.detalle {
+    color: #888;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+footer {
+    background-color: #0d0d0d;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #222;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/Formulario.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-principal">
+            <a href="Index.html">Inicio</a>
+            <a href="Formulario.html">Formulario</a>
+            <a href="Tienda-Productos.html">Tienda</a>
+            <a href="Calculadora.html">Calculadora</a>
+            <a href="Piedra-Papel-o-Tijera.html">Piedra, Papel o Tijera</a>
+            <a href="Naleatorio.html">Adivinanza del Número</a>
+            <a href="Tabla-de-Multiplicar.html">Tabla de Multiplicar</a>
+            <a href="Gestion-de-Descuentos.html">Gestion de Descuentos</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="titulo-limpio">Bienvenido a UAN</h2>
+        <form action="Exito.html">
+            <fieldset>
+                <legend>Información personal</legend>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escriba su nombre" minlength="3" maxlength="50" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" placeholder="ejemplo@correo.com">
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" placeholder="Ingrese su contraseña">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" min="18" max="60" required>
+                
+                <label for="fechaNacimiento">Fecha Nacimiento:</label>
+                <input type="date" id="fechaNacimiento">
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Académica y Carrera</legend>
+
+                <label for="academico">Historial Académico:</label>
+                <select id="academico" name="academico" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="Nada">No hizo colegiatura</option>
+                    <option value="Mitad">Hizo la mitad de la colegiatura</option>
+                    <option value="Completo">Completó toda la colegiatura hasta 11 de bachillerato</option>
+                </select>
+
+                <label for="programa">Programa:</label>
+                <select id="programa" name="programa" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="Codificación">Codificación de Software</option>
+                    <option value="Datos">Procesamiento de Datos</option>
+                    <option value="Cocina">Chef de Cocina</option>
+                    <option value="Farmaceutico">Farmacéutico de droguería</option>
+                </select>
+
+                <label for="Semestre">Semestre a cursar:</label>
+                <select id="Semestre" name="semestre" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="Semestre 1">2027-1</option>
+                    <option value="Semestre 2">2027-2</option>
+                    <option value="Semestre 3">2027-3</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferencias de Estudio</legend>
+                
+                <p><strong>Jornada:</strong></p>
+                <div class="grupo-opciones">
+                    <input type="radio" id="mañana" name="jornada" value="mañana">
+                    <label for="mañana">Mañana</label>
+            
+                    <input type="radio" id="noche" name="jornada" value="noche">
+                    <label for="noche">Noche</label>
+            
+                    <input type="radio" id="sabados" name="jornada" value="sabados">
+                    <label for="sabados">Sábados</label>
+                </div>
+                
+                <p><strong>Modalidad:</strong></p>
+                <div class="grupo-opciones">
+                    <input type="radio" id="presencial" name="modalidad" value="presencial">
+                    <label for="presencial">Presencial</label>
+            
+                    <input type="radio" id="virtual" name="modalidad" value="virtual">
+                    <label for="virtual">Virtual</label>
+            
+                    <input type="radio" id="hibrida" name="modalidad" value="hibrida">
+                    <label for="hibrida">Híbrida</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Intereses y Tecnologías</legend>
+                
+                <label for="intereses">Describa en un párrafo breve sus intereses personales:</label>
+                <textarea id="intereses" name="intereses" rows="5" placeholder="Escriba sus intereses aquí..." required></textarea>
+
+                <p><strong>Lenguajes de programación:</strong></p>
+                <div class="grupo-opciones">
+                    <input type="checkbox" id="python" name="lenguajes" value="python">
+                    <label for="python">Python</label>
+
+                    <input type="checkbox" id="java" name="lenguajes" value="java">
+                    <label for="java">Java</label>
+
+                    <input type="checkbox" id="javascript" name="lenguajes" value="javascript">
+                    <label for="javascript">JavaScript</label>
+
+                    <input type="checkbox" id="csharp" name="lenguajes" value="csharp">
+                    <label for="csharp">C#</label>
+                    
+                    <input type="checkbox" id="cpp" name="lenguajes" value="cpp">
+                    <label for="cpp">C++</label>
+                </div>
+
+                <p><strong>Tecnologías favoritas:</strong></p>
+                <div class="grupo-opciones">
+                    <input type="checkbox" id="ai" name="tecnologias" value="ai">
+                    <label for="ai">Inteligencia Artificial</label>
+
+                    <input type="checkbox" id="virtualization" name="tecnologias" value="virtualization">
+                    <label for="virtualization">Virtualización</label>
+
+                    <input type="checkbox" id="react" name="tecnologias" value="react">
+                    <label for="react">React</label>
+
+                    <input type="checkbox" id="angular" name="tecnologias" value="angular">
+                    <label for="angular">Angular</label>
+
+                    <input type="checkbox" id="docker" name="tecnologias" value="docker">
+                    <label for="docker">Docker</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Archivos Adicionales</legend>
+                
+                <label for="photo">Foto:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+                
+                <label for="cv">Hoja de vida:</label>
+                <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+            </fieldset>
+
+            <button type="submit">Enviar Formulario</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Johan Sebastián Molano Pérez - Proyecto Final de Programación Web</p>
+        <p>Correo electrónico: johan.molanope@tecalianza.edu.co</p>
+        <p>Teléfono de contacto: 3212863321</p>
+    </footer>
+</body>
+</html>
